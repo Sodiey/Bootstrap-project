@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <title>Example</title>
+    <style>
+      .carousel-item img {
+        max-height: 70vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="site-header" class="bg-dark">
+      <nav class="navbar navbar-expand-md  navbar-dark fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand font-weight-bold">#WriteYourFuture</a>
+          <a
+            href=""
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#myNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <section id="myNav" class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto text-center">
+              <a class="nav-item nav-link active" href="#">Home</a>
+              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
+          </section>
+        </div>
+      </nav>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+        data-interval="3000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./css.svg"
+              href="#"
+            >
+              <img
+                src="./assets/css.svg"
+                class="mt-5 d-block img-fluid w-100"
+                alt="..."
+              />
+            </a>
+            <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+              <h5
+                class="display-2 animated bounceInLeft"
+                style="animation-duration: 1s;"
+              >
+                CSS
+              </h5>
+              <p
+                class="lead text-muted animated fadeInUpBig"
+                style="animation-duration: 1s;"
+              >
+                Nulla vitae elit libero, a pharetra augue mollis interdum.
+              </p>
+              <a
+                href="#"
+                role="button"
+                class=" btn btn-secondary animated zoomIn"
+                style="animation-duration:1s;"
+                >LEARN MORE</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./html.svg"
+              href="#"
+            >
+              <img
+                src="./assets/html.svg"
+                class="mt-5 d-block img-fluid w-100"
+                alt="..."
+              />
+            </a>
+            <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+              <h5
+                class="display-2 animated bounceInRight"
+                style="animation-duration: 1s;"
+              >
+                HTML
+              </h5>
+              <p
+                class="lead text-muted animated fadeInUpBig"
+                style="animation-duration: 1s;"
+              >
+                Nulla vitae elit libero, a pharetra augue mollis interdum.
+              </p>
+              <a
+                href="#"
+                role="button"
+                class=" btn btn-secondary animated zoomIn"
+                style="animation-duration:1s;"
+                >LEARN MORE</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./database.svg"
+              href="#"
+            >
+              <img
+                src="./assets/database.svg"
+                class="mt-5 d-block img-fluid w-100"
+                alt="..."
+              />
+            </a>
+            <div class="carousel-caption d-none d-md-block mb-5 pb-5">
+              <h5
+                class="display-2 animated bounceIn"
+                style="animation-duration: 1s;"
+              >
+                DATABASE
+              </h5>
+              <p
+                class="lead text-muted animated fadeInUpBig"
+                style="animation-duration: 1s;"
+              >
+                Nulla vitae elit libero, a pharetra augue mollis interdum.
+              </p>
+              <a
+                href="#"
+                role="button"
+                class=" btn btn-secondary animated zoomIn"
+                style="animation-duration:1s;"
+                >LEARN MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article id="site-modal" class="modal fade animated bounceIn">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img
+            data-dismiss="modal"
+            class="img-fluid"
+            src="#"
+            alt="Modal Photo"
+          />
+        </div>
+      </div>
+    </article>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        $("#site-modal").on("show.bs.modal", function(event) {
+          $(this)
+            .find(".modal-content img")
+            .attr("src", $(event.relatedTarget).data("image"));
+        });
+      });
+    </script>
+  </body>
+</html>

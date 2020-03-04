@@ -1,0 +1,5 @@
+GitHub page --
+https://github.com/LinkedInLearning/bootstrap4-layouts-417642/blob/master/builds/js/script.js
+
+Lesson --
+https://www.linkedin.com/learning/bootstrap-4-layouts-responsive-single-page-design/reusable-modal-templates

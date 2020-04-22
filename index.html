@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+x§<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,9 +17,9 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".site-nav" data-offset="55" >
     <header id="page-hero" class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark text-uppercase">
+      <nav class="site-nav navbar navbar-expand-md navbar-dark fixed-top text-uppercase">
         <div class="container-fluid">
           <a href="#" class="navbar-brand"
             ><i class=" mr-1 fas fa-cube"></i>BrandName</a
@@ -40,9 +40,9 @@
               <a class="nav-item nav-link" href="#page-multicolumn">columns</a>
               <a class="nav-item nav-link" href="#page-media">media</a>
               <a class="nav-item nav-link" href="#page-carousel">carousel</a>
+              <a class="nav-item nav-link" href="#page-iconcolumns">icons</a>
               <a class="nav-item nav-link" href="#page-photogrid">flex</a>
               <a class="nav-item nav-link" href="#page-nested">nested</a>
-              <a class="nav-item nav-link" href="#page-iconcolumns">icons</a>
               <a class="nav-item nav-link" href="#page-floater">floater</a>
               <a class="nav-item nav-link" href="#page-cards">cards</a>
             </div>
@@ -83,31 +83,73 @@
       <section class="layout-multicolumn container-fluid">
         <div class="row justify-content-center">
           <section class="mb-4 col-10 col-md-6 col-lg-4 col-xl-3">
-            <img src="./assets/html.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/html.svg"
+              href="#"
+            ><img src="./assets/html.svg" alt="" />
+            </a>
             <h5 class="mt-2">HTML 5</h5>
           </section>
           <section class=" mb-4 col-10 col-md-6 col-lg-4 col-xl-3">
-            <img src="./assets/css.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/css.svg"
+              href="#"
+            ><img src="./assets/css.svg" alt="" />
+            </a>
             <h5 class="mt-2">CSS 3</h5>
           </section>
           <section class=" mb-4 col-10 col-md-6 col-lg-4 col-xl-3">
-            <img src="./assets/database.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/database.svg"
+              href="#"
+            ><img src="./assets/database.svg" alt="" />
+            </a>
             <h5 class="mt-2">DATABASE</h5>
           </section>
           <section class=" mb-4 col-10 col-md-6 col-lg-4 col-xl-3">
-            <img src="./assets/coffee.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/coffee.svg"
+              href="#"
+            ><img src="./assets/coffee.svg" alt="" />
+            </a>
             <h5 class="mt-2">COFFEE</h5>
           </section>
           <section class=" mb-4 col-10 col-md-6 col-lg-4 col-xl-3">
-            <img src="./assets/windows.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/windows.svg"
+              href="#"
+            ><img src="./assets/windows.svg" alt="" />
+            </a>
             <h5 class="mt-2">WINDOWS</h5>
           </section>
           <section class=" mb-4 col-10 col-md-6 col-lg-4 col-xl-3 mx">
-            <img src="./assets/apple.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/apple.svg"
+              href="#"
+            ><img src="./assets/apple.svg" alt="" />
+            </a>
             <h5 class="mt-2">APPLE</h5>
           </section>
           <section class=" mb-4 col-10 col-md-6 col-lg-4 col-xl-3 mx">
-            <img src="./assets/linux.svg" alt="" />
+            <a
+              data-toggle="modal"
+              data-target="#site-modal"
+              data-image="./assets/linux.svg"
+              href="#"
+            ><img src="./assets/linux.svg" alt="" />
+            </a>
             <h5 class="mt-2">LINUX</h5>
           </section>
         </div>
@@ -128,11 +170,16 @@
 
       <section class="layout-media container p-xl-5">
         <section class="media shadow-sm mb-4 p-2">
-          <img
+          <a
+          data-toggle="modal"
+          data-target="#site-modal"
+          data-image="https://source.unsplash.com/random"
+          href="#"
+          ><img
             class="layout-img mr-3"
             src="https://source.unsplash.com/random"
             alt=""
-          />
+          /></a>
           <div class="media-body">
             <h3>Lorem, ipsum.</h3>
             <p class="text-muted text-justify">
@@ -147,11 +194,16 @@
         </section>
 
         <section class="media shadow-sm mb-4 p-2">
-          <img
+          <a
+            data-toggle="modal"
+            data-target="#site-modal"
+            data-image="https://source.unsplash.com/user/erondu"
+            href="#"
+            ><img
             class="layout-img mr-3"
             src="https://source.unsplash.com/user/erondu"
             alt=""
-          />
+          /></a>
           <div class="media-body">
             <h3>Lorem, ipsum.</h3>
             <p class="text-muted text-justify">
@@ -165,11 +217,16 @@
         </section>
 
         <section class="media shadow-sm mb-4 p-2">
-          <img
+          <a
+          data-toggle="modal"
+          data-target="#site-modal"
+          data-image="https://source.unsplash.com/collection/190727"
+          href="#"
+          ><img
             class="layout-img mr-3"
             src="https://source.unsplash.com/collection/190727"
             alt=""
-          />
+          /></a>
           <div class="media-body">
             <h3>Lorem, ipsum.</h3>
             <p class="text-muted text-justify">
@@ -184,11 +241,12 @@
       </section>
     </article>
 
-    <article id="page-carousel" class="page-section mb-5">
+
+    <article id="page-carousel" class="page-section mb-5 py-3">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-8">
-            <div class="card shadow-sm">
+            <div class="card shadow-lg">
               <section class="card-header font-weight-bold">
                 Developer
               </section>
@@ -261,6 +319,43 @@
       </div>
     </article>
 
+    <article id="page-iconcolumns" class="page-section py-5`">
+
+      <div class="layout-iconcolumns container">
+        <div class="row text-center">
+  
+          <section class="col-md-4 my-3">
+            <div class="icon layout-icon">
+              <i class="fas fa-anchor fa-2x"></i>
+            </div>
+            <h3 class="layout-title">Icon One</h3>
+            <p class="layout-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis doloremque possimus dignissimos illo praesentium
+              id consectetur tempora dolorum! Vel sapiente vitae, deserunt minima et rem accusamus?</p>
+          </section>
+  
+          <section class="col-md-4 my-3">
+            <div class="icon layout-icon">
+              <i class="fas fa-bed fa-4x"></i>
+            </div>
+            <h3 class="layout-title">Icon Two</h3>
+            <p class="layout-text">Dolorem repudiandae ipsa fugit distinctio modi earum dicta eum tenetur, vel temporibus laudantium totam libero
+              odit ex labore commodi maiores molestias. Quo, hic maxime. Accusantium impedit dolorem cum error?</p>
+          </section>
+  
+          <section class="col-md-4 my-3">
+            <div class="icon layout-icon">
+              <i class="fas fa-beer fa-2x"></i>
+            </div>
+            <h3 class="layout-title">Icon Three</h3>
+            <p class="layout-text">Et, alias asperiores? Repellat repudiandae, eum temporibus quibusdam iure, recusandae illo nesciunt, doloremque
+              eligendi maiores tempora eos aliquid minus iusto ipsum facere. Minus, vitae autem dolores vero dolore?</p>
+          </section>
+  
+        </div>
+      </div>
+  
+    </article>
+
     <!-- <article id="page-nested" class="page-section">
       <div class="container">
         
@@ -302,6 +397,19 @@
       </div>
     </article> -->
 
+    <article id="site-modal" class="modal fade animated bounceIn">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img
+            data-dismiss="modal"
+            class="img-fluid"
+            src="#"
+            alt="Modal Photo"
+          />
+        </div>
+      </div>
+    </article>
+
     <footer class="site-footer bg-secondary d-flex justify-content-center py-5">
       <a class="px-2 text-light" href="https://twitter.com/planetoftheweb">
         <i class="layout-icon fab fa-twitter"></i>
@@ -335,21 +443,19 @@
       </a>
     </footer>
 
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

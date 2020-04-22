@@ -1,23 +1,80 @@
+:root {
+  /* --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; */
+}
+/* 
 html {
   scroll-behavior: smooth;
-}
-/*NAVIGATION*/
+} */
+  /*NAVIGATION*/
 .site-header {
   background-image: url("https://source.unsplash.com/random");
+  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+#page-hero .navbar {
+  opacity: 0.8;
+}
 
 .layout-hero {
-  min-height: 70vh;
+  min-height: 80vh;
+}
+
+#page-hero .nav-link{
+  color: #fff;
+}
+#page-hero .nav-link.active {
+  color: var(--yellow);
 }
 /*Gives background to the collapses tab*/
 @media screen and (max-width: 768px) {
-  .site-header .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;
+  .site-header .navbar-collapse a {
+    /* text-align: center; */
+    margin: 0 auto;
+    padding: 16px;
+    width: fit-content
   }
+  .site-header .navbar-collapse a:hover {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .site-nav {
+    background-color: rgb(52, 58, 64, 0.9)!important;
+  }
+}
+.site-nav {
+  background-color: rgb(52, 58, 64, 0.2);
+}
+.site-nav.inbody {
+  background-color: var(--dark);
 }
 /* ANIMATION */
 .site-header .nav-link {
@@ -44,8 +101,9 @@ html {
   transform: scaleX(1);
 }
 
-/*Multicolumn section*/
-#page-multicolumn {
+  /*Multicolumn section*/
+#page-multicolumn,
+#page-carousel {
   background-color: #e1f7f5;
 }
 
@@ -53,7 +111,7 @@ html {
 
 .layout-media .layout-img {
   width: 400px;
-  max-width: 50%;
+  /* max-width: 50%; */
   height: 35vh;
 }
 /* FOOTER */
@@ -158,3 +216,7 @@ html {
     max-width: 120% !important; }
   .mw-xl-130 {
     max-width: 130% !important; } } */
+
+
+
+    
